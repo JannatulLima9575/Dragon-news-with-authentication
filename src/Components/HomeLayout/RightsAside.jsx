@@ -1,9 +1,10 @@
 import React from 'react';
+import SocialLogin from './SocialLogin';
 
 const RightsAside = () => {
     return (
         <div>
-            RightsAside
+            <SocialLogin/>
         </div>
     );
 };
