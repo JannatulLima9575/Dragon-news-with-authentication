@@ -18,16 +18,16 @@ const Layouts = () => {
             <nav className='w-11/12 mx-auto my-3'>
                 <Navbar/>
             </nav>
-            <main className='w-11/12 mx-auto my-3 grid grid-cols-12'>
+            <main className='w-11/12 mx-auto my-3 grid grid-cols-12 gap-5'>
                 <aside className='col-span-3'>
                     <LeftAside/>
                 </aside>
 
-                <section className='main col-span-6'>
+                <section className='main col-span-7'>
                     <Outlet/>
                 </section>
 
-                <aside className='col-span-3'>
+                <aside className='col-span-2'>
                     <RightsAside/>
                 </aside>
             </main>
