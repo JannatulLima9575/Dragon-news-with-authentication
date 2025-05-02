@@ -19,7 +19,7 @@ const Layouts = () => {
                 <Navbar/>
             </nav>
             <main className='w-11/12 mx-auto my-3 grid grid-cols-12 gap-5'>
-                <aside className='col-span-3'>
+                <aside className='col-span-3 sticky top-0 h-fit'>
                     <LeftAside/>
                 </aside>
 
@@ -27,7 +27,7 @@ const Layouts = () => {
                     <Outlet/>
                 </section>
 
-                <aside className='col-span-2'>
+                <aside className='col-span-2 sticky top-0 h-fit'>
                     <RightsAside/>
                 </aside>
             </main>
