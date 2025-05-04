@@ -5,6 +5,9 @@ import {
 import Layouts from './../Layouts/Layouts';
 import Home from "../Pages/Home";
 import CategoryNews from "../Pages/CategoryNews";
+import Login from "../Pages/Login";
+import Register from "../Pages/Register";
+import AuthLAyout from "../Layouts/AuthLAyout";
 
 const router = createBrowserRouter([
     {
@@ -28,7 +31,17 @@ const router = createBrowserRouter([
     },
     {
       path: "/auth",
-      element: <h1>Authentication layouts</h1>,
+      Component: AuthLAyout,
+      children: [
+        {
+          path: "/auth/login",
+          Component: Login,
+        },
+        {
+          path: "/auth/register",
+          Component: Register,
+        }
+      ]
     },
     {
       path: "/news",
